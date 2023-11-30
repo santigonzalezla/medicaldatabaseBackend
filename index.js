@@ -18,7 +18,8 @@ const connect = async () =>
 {
     try
     {
-        await mongoose.connect('mongodb+srv://root:1234@meddb.tsa9ee7.mongodb.net/?retryWrites=true&w=majority');
+        mongoose.set('strictQuery', true);
+        await mongoose.connect(process.env.MONGODB_URI);
         console.log('Conectado a MongoDB');
     }
     catch (error)
