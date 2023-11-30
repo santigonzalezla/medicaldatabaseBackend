@@ -1,4 +1,4 @@
-import PurchaseOrder from "../model/purchaseOrder.js";
+import PurchaseOrder from "../model/purchaseorder.js";
 
 const getPurchaseOrder = async (req, res, next) =>
 {
